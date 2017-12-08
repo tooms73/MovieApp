@@ -1,0 +1,90 @@
+﻿[
+  {
+    "id": "1",
+    "title": "Home alone",
+    "year": "1990",
+    "picture": "/images/homealone.jpg",
+    "category": "Comedy",
+    "actors": [
+      {
+        "name": " Macaulay Culkin"
+      },
+      {
+        "name": "Joe Pesci"
+      },
+      {
+        "name": "Daniel Stern"
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "title": "Home alone 3",
+    "year": "1997",
+    "picture": "/images/homealone3.jpg",
+    "category": "Comedy",
+    "actors": [
+      {
+        "name": " Macaulay Culkin"
+      },
+      {
+        "name": "Joe Pesci"
+      },
+      {
+        "name": "Daniel Stern"
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "title": "Home alone 2",
+    "year": "1992",
+    "picture": "/images/homealone2.jpg",
+    "category": "Comedy",
+    "actors": [
+      {
+        "name": " Macaulay Culkin"
+      },
+      {
+        "name": "Joe Pesci"
+      },
+      {
+        "name": "Daniel Stern"
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "title": "Rambo",
+    "year": "1982",
+    "picture": "/images/rambo.jpg",
+    "category": "Action",
+    "actors": [
+      {
+        "name": "Sylvester Stallone"
+      }
+    ]
+  },
+  {
+    "id": "5",
+    "title": "Terminator",
+    "year": "1984",
+    "picture": "/images/terminator.jpg",
+    "category": "Action",
+    "actors": [
+      {
+        "name": "Arnold Scwatzeneger"
+      }
+    ]
+  },
+  {
+    "id": "6",
+    "title": "IT",
+    "year": "2017",
+    "picture": "/images/it.jpg",
+    "category": "Horror",
+    "actors": [
+    ]
+  }
+]
+

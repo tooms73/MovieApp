@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html ng-app="MovieApp">
+<head>
+    <meta charset="utf-8" />
+    <title>Movie App</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.js"></script>
+    <script src="Js/app/moviesapp.js"></script>
+</head>
+<body ng-controller="MovieListController as vm">
+    <label>Sorter:
+        <select ng-model="vm.sort">
+            <option value="Title">Title</option>
+            <option value="Year">År</option>
+        </select>
+    </label>
+<label>Søg: <input ng-model="vm.filter"></label>
+<input type="button" value="Ryd" ng-click="vm.clear()" />
+<h1>Movies</h1>
+<ul ng-repeat="movie in vm.movies | orderBy:vm.sort | filter:vm.filter:strict">
+    <li ng-click="vm.movieDetail(movie.Id)">{{movie.Title}} ({{movie.Year}})</li>
+</ul>
+<div>
+    <img ng-if="vm.movie.Picture" ng-src="{{vm.movie.Picture}}"/>
+    <p ng-if="vm.movie.Title">{{vm.movie.Title}}</p>
+    <p ng-if="vm.movie.Year">{{vm.movie.Year}}</p>
+    <p ng-if="vm.movie.Category">{{vm.movie.Category}}</p>
+    <p ng-if="vm.movie.Actors">Actors</p>
+    <ul ng-if="vm.movie.Actors" ng-repeat="actor in vm.movie.Actors">
+        <li>{{actor.Name}}</li>
+    </ul>
+</div>
+</body>
+</html>
